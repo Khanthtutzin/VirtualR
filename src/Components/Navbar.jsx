@@ -18,14 +18,14 @@ const Navbar = () => {
                     <img className='h-10 w-10 mr-2' src={logo} alt="" />
                     <span className="text-xl tracking-tight">VituralR</span>
                 </div>
-                <ul className="sm:hidden lg:flex ml-14 space-x-12">
+                <ul className="invisible lg:visible lg:flex ml-14 space-x-12">
                     {navItems.map((item, idx)=>(
                         <li key={idx}>
                             <a href={item.href}>{item.label}</a>
                         </li>
                     ))}
                 </ul>
-                <div className="sm:hidden lg:flex justify-center space-x-12 items-center">
+                <div className="flex max-sm:hidden justify-center space-x-12 items-center">
                     <a href="" className='py-2 px-3 border rounded-md'>
                         Sign In
                     </a>
